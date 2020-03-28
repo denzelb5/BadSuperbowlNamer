@@ -13,7 +13,7 @@ namespace BadSuperbowlNamer
                 if ((number < 0) || (number > 3999)) throw new ArgumentOutOfRangeException("Value must be between 1 and 3999");
                 if (number < 1) return string.Empty;
                 if (number >= 1000) return "M" + ToRoman(number - 1000);
-                if (number >= 900) return "CM" + ToRoman(number - 900); //EDIT: i've typed 400 instead 900
+                if (number >= 900) return "CM" + ToRoman(number - 900); 
                 if (number >= 500) return "D" + ToRoman(number - 500);
                 if (number >= 400) return "CD" + ToRoman(number - 400);
                 if (number >= 100) return "C" + ToRoman(number - 100);
